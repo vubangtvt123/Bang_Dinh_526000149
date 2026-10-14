@@ -24,10 +24,7 @@ Nhấp đúp vào `index.html` để mở bằng trình duyệt. Các chức nă
 .
 ├── assets/
 │   ├── icons/
-│   │   └── favicon.svg       # Biểu tượng thương hiệu trên tab trình duyệt
-│   ├── images/
-│   │   └── README.md         # Hướng dẫn quản lý ảnh cục bộ
-│   └── README.md             # Mô tả thư mục tài nguyên
+│       └── favicon.svg       # Biểu tượng thương hiệu trên tab trình duyệt
 ├── index.html                # Cấu trúc Semantic HTML5 và nội dung
 ├── style.css                 # Thiết kế, hiệu ứng và responsive
 ├── script.js                 # Tương tác phía trình duyệt
