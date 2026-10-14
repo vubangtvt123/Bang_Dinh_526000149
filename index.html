@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUXE FASHION - Thời trang nam nữ hiện đại, tối giản và tinh tế cho phong cách riêng của bạn.">
+  <meta name="theme-color" content="#151411">
+  <title>LUXE FASHION | Phong cách của riêng bạn</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Font chữ và thư viện hiệu ứng -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đi đến nội dung chính</a>
+
+  <!-- Header và điều hướng chính -->
+  <header class="site-header" id="top">
+    <p class="announcement">Miễn phí giao hàng toàn quốc cho đơn từ 1.500.000₫</p>
+
+    <section class="header-shell" aria-label="Đầu trang">
+      <button class="menu-toggle icon-button" type="button" aria-label="Mở menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a class="brand" href="#top" aria-label="LUXE FASHION - Trang chủ">
+        <span class="brand-main">LUXE</span>
+        <span class="brand-sub">FASHION</span>
+      </a>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Điều hướng chính">
+        <a class="nav-link active" href="#top">Trang chủ</a>
+        <a class="nav-link" href="#san-pham" data-nav-filter="nam">Nam</a>
+        <a class="nav-link" href="#san-pham" data-nav-filter="nu">Nữ</a>
+        <a class="nav-link" href="#bo-suu-tap">Bộ sưu tập</a>
+        <a class="nav-link" href="#khuyen-mai">Khuyến mãi</a>
+        <a class="nav-link" href="#lien-he">Liên hệ</a>
+      </nav>
+
+      <section class="header-actions" aria-label="Tiện ích">
+        <button class="icon-button search-trigger" type="button" aria-label="Tìm kiếm sản phẩm">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+        </button>
+        <button class="icon-button account-button" type="button" aria-label="Tài khoản mẫu">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg>
+        </button>
+        <button class="icon-button cart-trigger" type="button" aria-label="Mở giỏ hàng" aria-controls="cart-drawer" aria-expanded="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 7H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+      </section>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Banner -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=88" alt="Không gian trưng bày thời trang hiện đại" fetchpriority="high">
+      <span class="hero-overlay" aria-hidden="true"></span>
+      <section class="hero-content">
+        <p class="eyebrow animate__animated animate__fadeIn">Bộ sưu tập Thu Đông 2026</p>
+        <h1 id="hero-title" class="animate__animated animate__fadeInDown">Phong cách<br>của riêng bạn</h1>
+        <p class="hero-copy animate__animated animate__fadeInUp">Những đường cắt tinh giản, chất liệu chọn lọc và bảng màu vượt thời gian — dành cho bạn, theo cách riêng nhất.</p>
+        <a class="button button-light animate__animated animate__fadeInUp" href="#san-pham">Khám phá ngay <span aria-hidden="true">↗</span></a>
+      </section>
+      <a class="scroll-cue" href="#bo-suu-tap" aria-label="Cuộn xuống bộ sưu tập">
+        <span>Khám phá</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <!-- Danh mục sản phẩm -->
+    <section class="section categories" id="bo-suu-tap" aria-labelledby="category-title">
+      <header class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Sắc thái LUXE</p>
+        <h2 id="category-title" class="animate__animated animate__fadeInUp">Chọn phong cách của bạn</h2>
+        <p>Mỗi thiết kế là một mảnh ghép giúp bạn tạo nên dấu ấn cá nhân.</p>
+      </header>
+
+      <section class="category-grid" aria-label="Danh mục thời trang">
+        <article class="category-card category-card-large" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1200&q=85" alt="Người mẫu nam trong trang phục vest hiện đại" loading="lazy">
+          <span class="image-shade" aria-hidden="true"></span>
+          <section class="category-content">
+            <p>01 — Modern tailoring</p>
+            <h3>Thời trang nam</h3>
+            <a href="#san-pham" data-category-link="nam">Khám phá <span aria-hidden="true">→</span></a>
+          </section>
+        </article>
+
+        <article class="category-card" data-aos="fade-up" data-aos-delay="80">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85" alt="Người mẫu nữ với phong cách thời trang tối giản" loading="lazy">
+          <span class="image-shade" aria-hidden="true"></span>
+          <section class="category-content">
+            <p>02 — Quiet elegance</p>
+            <h3>Thời trang nữ</h3>
+            <a href="#san-pham" data-category-link="nu">Khám phá <span aria-hidden="true">→</span></a>
+          </section>
+        </article>
+
+        <article class="category-card" data-aos="fade-up" data-aos-delay="160">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=85" alt="Túi xách da màu nâu thanh lịch" loading="lazy">
+          <span class="image-shade" aria-hidden="true"></span>
+          <section class="category-content">
+            <p>03 — Final touch</p>
+            <h3>Phụ kiện</h3>
+            <a href="#san-pham" data-category-link="phu-kien">Khám phá <span aria-hidden="true">→</span></a>
+          </section>
+        </article>
+
+        <article class="category-card category-card-wide" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=85" alt="Người mẫu trong bộ sưu tập thời trang mới" loading="lazy">
+          <span class="image-shade" aria-hidden="true"></span>
+          <section class="category-content">
+            <p>04 — The new chapter</p>
+            <h3>Bộ sưu tập mới</h3>
+            <a href="#san-pham" data-category-link="all">Xem tất cả <span aria-hidden="true">→</span></a>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <!-- Sản phẩm nổi bật -->
+    <section class="section products-section" id="san-pham" aria-labelledby="products-title">
+      <header class="products-header" data-aos="fade-up">
+        <section class="section-heading align-left">
+          <p class="eyebrow">Curated for you</p>
+          <h2 id="products-title" class="animate__animated animate__fadeInUp">Thiết kế nổi bật</h2>
+        </section>
+        <section class="product-filters" aria-label="Lọc sản phẩm">
+          <button class="filter-button active" type="button" data-filter="all">Tất cả</button>
+          <button class="filter-button" type="button" data-filter="nam">Nam</button>
+          <button class="filter-button" type="button" data-filter="nu">Nữ</button>
+          <button class="filter-button" type="button" data-filter="phu-kien">Phụ kiện</button>
+        </section>
+      </header>
+
+      <section class="product-grid" aria-live="polite">
+        <article class="product-card" data-name="Áo Blazer Linen Écru" data-category="nam" data-price="1890000" data-aos="fade-up">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=85" alt="Áo blazer linen màu be cho nam" loading="lazy">
+            <span class="product-badge">Mới</span>
+            <button class="quick-add" type="button" aria-label="Thêm Áo Blazer Linen Écru vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE MEN</p>
+            <h3>Áo Blazer Linen Écru</h3>
+            <p class="product-price"><strong>1.890.000₫</strong></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Đầm Midi Silk Noir" data-category="nu" data-price="2150000" data-aos="fade-up" data-aos-delay="60">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=85" alt="Đầm midi màu đen thanh lịch cho nữ" loading="lazy">
+            <span class="product-badge">Mới</span>
+            <button class="quick-add" type="button" aria-label="Thêm Đầm Midi Silk Noir vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE WOMEN</p>
+            <h3>Đầm Midi Silk Noir</h3>
+            <p class="product-price"><strong>2.150.000₫</strong></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Sơ Mi Premium Cotton" data-category="nam" data-price="890000" data-aos="fade-up" data-aos-delay="120">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=85" alt="Áo sơ mi trắng premium cho nam" loading="lazy">
+            <span class="product-badge sale">−20%</span>
+            <button class="quick-add" type="button" aria-label="Thêm Sơ Mi Premium Cotton vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE MEN</p>
+            <h3>Sơ Mi Premium Cotton</h3>
+            <p class="product-price"><strong>890.000₫</strong> <del>1.120.000₫</del></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Túi Da Marais" data-category="phu-kien" data-price="1690000" data-aos="fade-up" data-aos-delay="180">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85" alt="Túi xách da nữ phong cách tối giản" loading="lazy">
+            <span class="product-badge">Mới</span>
+            <button class="quick-add" type="button" aria-label="Thêm Túi Da Marais vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE ACCESSORIES</p>
+            <h3>Túi Da Marais</h3>
+            <p class="product-price"><strong>1.690.000₫</strong></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Quần Tây Pleated Sand" data-category="nam" data-price="1090000" data-aos="fade-up">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=800&q=85" alt="Quần tây nam dáng suông màu cát" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Thêm Quần Tây Pleated Sand vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE MEN</p>
+            <h3>Quần Tây Pleated Sand</h3>
+            <p class="product-price"><strong>1.090.000₫</strong></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Áo Lụa Ivory" data-category="nu" data-price="1190000" data-aos="fade-up" data-aos-delay="60">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=85" alt="Áo lụa nữ màu ngà thanh lịch" loading="lazy">
+            <span class="product-badge sale">−15%</span>
+            <button class="quick-add" type="button" aria-label="Thêm Áo Lụa Ivory vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE WOMEN</p>
+            <h3>Áo Lụa Ivory</h3>
+            <p class="product-price"><strong>1.190.000₫</strong> <del>1.400.000₫</del></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Kính Mát Riviera" data-category="phu-kien" data-price="790000" data-aos="fade-up" data-aos-delay="120">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=85" alt="Kính mát Riviera gọng đen" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Thêm Kính Mát Riviera vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE ACCESSORIES</p>
+            <h3>Kính Mát Riviera</h3>
+            <p class="product-price"><strong>790.000₫</strong></p>
+          </section>
+        </article>
+
+        <article class="product-card" data-name="Đầm Linen Muse" data-category="nu" data-price="1590000" data-aos="fade-up" data-aos-delay="180">
+          <section class="product-visual">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=85" alt="Đầm linen nữ dáng dài thanh lịch" loading="lazy">
+            <span class="product-badge">Mới</span>
+            <button class="quick-add" type="button" aria-label="Thêm Đầm Linen Muse vào giỏ">Thêm vào giỏ</button>
+          </section>
+          <section class="product-info">
+            <p class="product-category">LUXE WOMEN</p>
+            <h3>Đầm Linen Muse</h3>
+            <p class="product-price"><strong>1.590.000₫</strong></p>
+          </section>
+        </article>
+      </section>
+
+      <p class="no-products" role="status" hidden>Không tìm thấy sản phẩm phù hợp. Hãy thử một từ khóa khác.</p>
+    </section>
+
+    <!-- Banner khuyến mãi -->
+    <section class="promotion" id="khuyen-mai" aria-labelledby="promotion-title">
+      <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=2000&q=85" alt="Người mẫu trình diễn bộ sưu tập thời trang cao cấp" loading="lazy">
+      <span class="promotion-overlay" aria-hidden="true"></span>
+      <section class="promotion-content" data-aos="zoom-in">
+        <p class="eyebrow">Private sale · Có thời hạn</p>
+        <h2 id="promotion-title">Ưu đãi đặc biệt</h2>
+        <p>Giảm đến <strong>30%</strong> cho những thiết kế chọn lọc trong bộ sưu tập Thu Đông.</p>
+        <a class="button button-light" href="#san-pham">Mua ngay <span aria-hidden="true">→</span></a>
+      </section>
+    </section>
+
+    <!-- Giới thiệu thương hiệu -->
+    <section class="section brand-story" aria-labelledby="story-title">
+      <section class="story-images" data-aos="fade-right">
+        <img class="story-image-main" src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=1000&q=85" alt="Phong cách sống hiện đại của người phụ nữ LUXE" loading="lazy">
+        <img class="story-image-accent" src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=600&q=85" alt="Chi tiết trang phục thời trang tinh tế" loading="lazy">
+        <span class="story-mark" aria-hidden="true">LF</span>
+      </section>
+
+      <section class="story-content" data-aos="fade-left">
+        <p class="eyebrow">Our philosophy</p>
+        <h2 id="story-title">Thời trang là tuyên ngôn của bạn</h2>
+        <p>LUXE FASHION tin rằng sự sang trọng đích thực đến từ cảm giác tự tin khi là chính mình. Mỗi thiết kế được tạo nên từ những phom dáng tinh giản, chất liệu có chiều sâu và tinh thần hiện đại.</p>
+        <p>Chúng tôi không chạy theo những xu hướng chóng qua. LUXE chọn tạo ra một tủ đồ linh hoạt, bền bỉ và luôn mang dấu ấn riêng của người mặc.</p>
+        <a class="text-link" href="#lien-he">Câu chuyện LUXE <span aria-hidden="true">→</span></a>
+      </section>
+    </section>
+
+    <!-- Đăng ký nhận tin -->
+    <section class="newsletter" aria-labelledby="newsletter-title" data-aos="fade-up">
+      <section class="newsletter-copy">
+        <p class="eyebrow">The LUXE letter</p>
+        <h2 id="newsletter-title">Chạm vào thế giới LUXE</h2>
+        <p>Nhận thông tin bộ sưu tập mới, câu chuyện phong cách và ưu đãi dành riêng cho bạn.</p>
+      </section>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <label for="newsletter-email">Địa chỉ email</label>
+        <section class="input-group">
+          <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="ban@email.com" required aria-describedby="newsletter-message">
+          <button type="submit">Đăng ký <span aria-hidden="true">→</span></button>
+        </section>
+        <p class="form-message" id="newsletter-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="lien-he">
+    <section class="footer-main">
+      <section class="footer-brand">
+        <a class="brand brand-light" href="#top" aria-label="LUXE FASHION - Về đầu trang">
+          <span class="brand-main">LUXE</span>
+          <span class="brand-sub">FASHION</span>
+        </a>
+        <p>Thời trang tinh giản cho một phong cách không giới hạn.</p>
+        <address>
+          52 Đồng Khởi, Phường Sài Gòn, TP. Hồ Chí Minh<br>
+          <a href="tel:+842873001886">(028) 7300 1886</a><br>
+          <a href="mailto:hello@luxefashion.vn">hello@luxefashion.vn</a>
+        </address>
+      </section>
+
+      <nav class="footer-column" aria-label="Liên kết mua sắm">
+        <h2>Mua sắm</h2>
+        <a href="#san-pham" data-footer-filter="nam">Thời trang nam</a>
+        <a href="#san-pham" data-footer-filter="nu">Thời trang nữ</a>
+        <a href="#san-pham" data-footer-filter="phu-kien">Phụ kiện</a>
+        <a href="#bo-suu-tap">Bộ sưu tập mới</a>
+      </nav>
+
+      <nav class="footer-column" aria-label="Chính sách và hỗ trợ">
+        <h2>Hỗ trợ</h2>
+        <a href="#footer-note">Hướng dẫn mua hàng</a>
+        <a href="#footer-note">Chính sách đổi trả</a>
+        <a href="#footer-note">Chính sách bảo mật</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+
+      <section class="footer-column">
+        <h2>Theo dõi LUXE</h2>
+        <p>Những khoảnh khắc mới nhất từ studio và cộng đồng LUXE.</p>
+        <nav class="social-links" aria-label="Mạng xã hội">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+        </nav>
+      </section>
+    </section>
+
+    <section class="footer-bottom" id="footer-note">
+      <p>© 2026 LUXE FASHION. Dự án website học tập.</p>
+      <p>Thanh toán và đặt hàng trực tuyến chưa được triển khai.</p>
+    </section>
+  </footer>
+
+  <!-- Hộp thoại tìm kiếm -->
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <section class="dialog-header">
+      <p class="eyebrow">Tìm trong LUXE</p>
+      <button class="icon-button search-close" type="button" aria-label="Đóng tìm kiếm">×</button>
+    </section>
+    <h2 id="search-title">Bạn đang tìm thiết kế nào?</h2>
+    <label for="search-input">Tên sản phẩm</label>
+    <section class="search-box">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+      <input id="search-input" type="search" placeholder="Ví dụ: blazer, đầm, túi..." autocomplete="off">
+    </section>
+    <p class="search-status" id="search-status" role="status">Nhập tên sản phẩm để bắt đầu tìm kiếm.</p>
+  </dialog>
+
+  <!-- Giỏ hàng phía bên phải -->
+  <span class="page-overlay" aria-hidden="true"></span>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+    <header class="cart-header">
+      <section>
+        <p class="eyebrow">Your selection</p>
+        <h2 id="cart-title">Giỏ hàng <span class="cart-title-count">(0)</span></h2>
+      </section>
+      <button class="icon-button cart-close" type="button" aria-label="Đóng giỏ hàng">×</button>
+    </header>
+    <section class="cart-items" aria-live="polite">
+      <section class="empty-cart">
+        <span aria-hidden="true">◇</span>
+        <p>Giỏ hàng của bạn đang trống.</p>
+        <a href="#san-pham" class="text-link cart-shop-link">Khám phá sản phẩm →</a>
+      </section>
+    </section>
+    <footer class="cart-footer" hidden>
+      <section class="cart-total">
+        <span>Tạm tính</span>
+        <strong>0₫</strong>
+      </section>
+      <button class="button checkout-button" type="button">Xem thông tin đặt hàng</button>
+      <p>Website minh họa — chưa hỗ trợ thanh toán trực tuyến.</p>
+    </footer>
+  </aside>
+
+  <p class="toast" role="status" aria-live="polite"></p>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
