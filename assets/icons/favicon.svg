@@ -1,1 +1,7 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>LUXE FASHION</title>
+  <rect width="64" height="64" rx="8" fill="#151411"/>
+  <path d="M17 15v30h20v-6H24V15h-7Z" fill="#f3eee6"/>
+  <path d="M36 15h12v6H36v-6Zm0 12h10v6H36v-6Zm0 12h12v6H36v-6Z" fill="#b79663"/>
+</svg>
