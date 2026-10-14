@@ -9,7 +9,7 @@
 
 > Bạn là một lập trình viên Front-end chuyên nghiệp. Hãy xây dựng website cửa hàng thời trang hiện đại mang tên LUXE FASHION bằng HTML5, CSS3 và JavaScript cơ bản. Website sử dụng giao diện tiếng Việt, phong cách tối giản, sang trọng và chuyên nghiệp; không sử dụng React, Vue, Bootstrap hoặc Tailwind CSS.
 >
-> Dự án cần có các file `index.html`, `style.css`, `script.js` và `README.md`; sử dụng đúng các thẻ Semantic HTML5 như `header`, `nav`, `main`, `section`, `article` và `footer`. Giao diện phải có Header, Hero Banner, danh mục, tối thiểu 8 sản phẩm, banner khuyến mãi, phần giới thiệu thương hiệu, đăng ký nhận tin và Footer.
+> Dự án cần có các file `index.html`, `style.css`, và `README.md`; sử dụng đúng các thẻ Semantic HTML5 như `header`, `nav`, `main`, `section`, `article` và `footer`. Giao diện phải có Header, Hero Banner, danh mục, tối thiểu 8 sản phẩm, banner khuyến mãi, phần giới thiệu thương hiệu, đăng ký nhận tin và Footer.
 >
 > CSS phải khai báo hệ thống CSS Variables, sử dụng Flexbox, Grid và responsive cho desktop, laptop, tablet, điện thoại. Tích hợp Animate.css và AOS qua CDN. JavaScript cần xử lý menu mobile, tìm kiếm sản phẩm, lọc sản phẩm, thêm vào giỏ hàng, cập nhật số lượng và kiểm tra email. Sau khi hoàn thành, hãy kiểm tra đường dẫn, CDN, responsive và các chức năng tương tác.
 
@@ -30,7 +30,7 @@
 
   > Tích hợp Animate.css và AOS qua CDN. Dùng các hiệu ứng nhẹ như `fadeInDown`, `fadeInUp`, `fade-right` và `zoom-in` cho Hero, danh mục, sản phẩm, khuyến mãi và giới thiệu thương hiệu. Không lạm dụng chuyển động và phải hỗ trợ `prefers-reduced-motion`.
 
-- **Kết quả AI tạo ra:** Animate.css được áp dụng cho tiêu đề, mô tả và CTA trong Hero. AOS được gắn bằng các thuộc tính `data-aos` và `data-aos-delay` cho các nội dung xuất hiện khi cuộn. AOS được khởi tạo trong `script.js` với thời lượng và easing nhẹ nhàng.
+- **Kết quả AI tạo ra:** Animate.css được áp dụng cho tiêu đề, mô tả và CTA trong Hero. AOS được gắn bằng các thuộc tính `data-aos` và `data-aos-delay` cho các nội dung xuất hiện khi cuộn. AOS với thời lượng và easing nhẹ nhàng.
 - **Thách thức gặp phải:** Nếu file JavaScript của AOS không tải được nhưng CSS AOS vẫn hoạt động, một số phần tử có thể bị giữ ở trạng thái ẩn.
 - **Cách sửa prompt (Debug prompt):**
 
@@ -51,20 +51,6 @@
   > Hãy kiểm tra Hero ở kích thước 390 × 844 px và điều chỉnh typography bằng `clamp()` hoặc đơn vị `vw` để tiêu đề vẫn nổi bật nhưng không tràn khỏi viewport.
 
 - **Kết quả sau khi sửa:** Cỡ chữ Hero trên mobile được giảm và giới hạn bằng `clamp(3rem, 14.5vw, 4.5rem)`. Bố cục đã được render thử ở desktop 1440 × 1000 px và mobile 390 × 844 px.
-
-### Lần 4: Xây dựng tìm kiếm, bộ lọc và giỏ hàng
-
-- **Prompt đã dùng:**
-
-  > Viết JavaScript thuần để tìm kiếm sản phẩm theo tên, hỗ trợ từ khóa tiếng Việt không dấu; lọc theo Nam, Nữ và Phụ kiện; thêm sản phẩm vào giỏ; tăng, giảm hoặc xóa số lượng; cập nhật huy hiệu giỏ hàng và tính tạm tính bằng VNĐ. Không được tuyên bố có thanh toán thật.
-
-- **Kết quả AI tạo ra:** Website có hộp thoại tìm kiếm, bộ lọc sản phẩm, giỏ hàng dạng drawer, thông báo toast và định dạng tiền bằng `Intl.NumberFormat("vi-VN")`. Nút đặt hàng hiển thị rõ đây chỉ là chức năng minh họa.
-- **Thách thức gặp phải:** Phiên bản đầu tiên tự đóng hộp thoại tìm kiếm sau khoảng thời gian ngắn ngay khi tìm thấy ký tự phù hợp, khiến người dùng khó nhập trọn từ khóa.
-- **Cách sửa prompt (Debug prompt):**
-
-  > Không tự động đóng hộp tìm kiếm khi người dùng đang nhập. Hãy cập nhật số kết quả theo thời gian thực và chỉ đóng hộp thoại, cuộn đến danh sách sản phẩm khi người dùng nhấn Enter.
-
-- **Kết quả sau khi sửa:** Người dùng có thể nhập đầy đủ từ khóa, xem số kết quả hoặc thông báo không tìm thấy, sau đó nhấn Enter để đến khu vực sản phẩm.
 
 ### Lần 5: Kiểm tra biểu mẫu, hình ảnh và chất lượng mã nguồn
 

@@ -24,10 +24,12 @@ Nhấp đúp vào `index.html` để mở bằng trình duyệt. Các chức nă
 .
 ├── assets/
 │   ├── icons/
-│       └── favicon.svg       # Biểu tượng thương hiệu trên tab trình duyệt
+│   │   └── favicon.svg       # Biểu tượng thương hiệu trên tab trình duyệt
+│   ├── images/
+│   │   └── README.md         # Hướng dẫn quản lý ảnh cục bộ
+│   └── README.md             # Mô tả thư mục tài nguyên
 ├── index.html                # Cấu trúc Semantic HTML5 và nội dung
 ├── style.css                 # Thiết kế, hiệu ứng và responsive
-├── script.js                 # Tương tác phía trình duyệt
 ├── PROMPT_LOG.md             # Nhật ký Prompt Engineering
 └── README.md                 # Hướng dẫn dự án
 ```
@@ -36,7 +38,6 @@ Nhấp đúp vào `index.html` để mở bằng trình duyệt. Các chức nă
 
 - HTML5 Semantic: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`.
 - CSS3: CSS Variables, Flexbox, Grid, transitions, responsive media queries.
-- JavaScript thuần (Vanilla JavaScript), không dùng framework.
 - [Animate.css](https://animate.style/) qua CDN cho hiệu ứng ở Hero và tiêu đề.
 - [AOS](https://michalsnik.github.io/aos/) qua CDN cho hiệu ứng khi cuộn trang.
 - Google Fonts: Cormorant Garamond và Manrope.
